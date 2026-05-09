@@ -222,15 +222,17 @@ function initLanguageToggle() {
             const text = link.textContent.trim();
             const originalText = link.textContent.trim();
             
-            // Handle all navigation items
-            if (originalText === 'HOME' || originalText === 'INICIO') {
-                link.textContent = t.home;
-            } else if (originalText === 'WORK' || originalText === 'TRABAJO') {
-                link.textContent = t.work;
-            } else if (originalText === 'ABOUT' || originalText === 'ACERCA DE') {
-                link.textContent = t.about;
-            } else if (originalText === 'CONTACT' || originalText === 'CONTACTO') {
-                link.textContent = t.contact;
+            // Handle all navigation items - but skip language toggle buttons
+            if (!link.classList.contains('language-toggle')) {
+                if (originalText === 'HOME' || originalText === 'INICIO') {
+                    link.textContent = t.home;
+                } else if (originalText === 'WORK' || originalText === 'TRABAJO') {
+                    link.textContent = t.work;
+                } else if (originalText === 'ABOUT' || originalText === 'ACERCA DE') {
+                    link.textContent = t.about;
+                } else if (originalText === 'CONTACT' || originalText === 'CONTACTO') {
+                    link.textContent = t.contact;
+                }
             }
         });
 
@@ -287,11 +289,13 @@ function initLanguageToggle() {
             }
         });
 
-        // Update buttons
+        // Update buttons - but skip language toggle buttons
         document.querySelectorAll('button, a').forEach(element => {
-            const text = element.textContent.trim();
-            if (text === 'Start a Project' || text === 'Comenzar Proyecto') {
-                element.textContent = t.startProject;
+            if (!element.classList.contains('language-toggle')) {
+                const text = element.textContent.trim();
+                if (text === 'Start a Project' || text === 'Comenzar Proyecto') {
+                    element.textContent = t.startProject;
+                }
             }
         });
 
