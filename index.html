@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Cuevas — Websites for Small Businesses Across Illinois</title>
+    <meta name="description" content="Kevin Cuevas creates websites for small businesses across Illinois. Computer Science student at Northern Illinois University.">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="bg-warm-cream">
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-warm-cream/95 backdrop-blur-sm border-b border-sandstone/20">
+        <nav class="container mx-auto px-4 py-4" role="navigation" aria-label="Main navigation">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="font-sans text-sm font-medium text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm" aria-label="Home">
+                    HOME
+                </a>
+                
+                <a href="index.html" class="font-serif text-xl text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm" aria-label="Kevin Cuevas" style="margin-left: 2px;">
+                    Kevin Cuevas
+                </a>
+                
+                <div class="flex items-center gap-4">
+                    <div class="hidden md:flex items-center gap-2 text-sm">
+                        <button class="language-toggle flex items-center gap-2 text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-3 py-1" data-lang="en" aria-label="English language">
+                            <span class="text-base">🇺🇸</span>
+                            <span>EN</span>
+                        </button>
+                        <button class="language-toggle flex items-center gap-2 text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-3 py-1" data-lang="es" aria-label="Spanish language">
+                            <span class="text-base">🇲🇽</span>
+                            <span>ES</span>
+                        </button>
+                    </div>
+                    <button id="mobile-menu-btn" class="md:hidden text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm p-2" aria-label="Menu" aria-expanded="false">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    <button class="hidden md:block text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2 border border-warm-charcoal/20 hover:border-terracotta/40">
+                        Menu
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-warm-cream/95 mobile-menu-overlay hidden" role="dialog" aria-modal="true" aria-label="Navigation menu">
+        <div class="flex flex-col items-center justify-center h-full space-y-8 text-2xl font-serif">
+            <a href="index.html" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">HOME</a>
+            <a href="work.html" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">WORK</a>
+            <a href="about.html" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">ABOUT</a>
+            <a href="contact.html" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">CONTACT</a>
+            
+            <div class="flex items-center gap-4 text-lg pt-8 border-t border-sandstone/20">
+                <button class="language-toggle flex items-center gap-3 text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2" data-lang="en" aria-label="English language">
+                    <span class="text-lg">🇺🇸</span>
+                    <span>EN</span>
+                </button>
+                <button class="language-toggle flex items-center gap-3 text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2" data-lang="es" aria-label="Spanish language">
+                    <span class="text-lg">🇲🇽</span>
+                    <span>ES</span>
+                </button>
+            </div>
+        </div>
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm p-2" aria-label="Close menu">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="./Photos/IMG_8592.jpeg" alt="Mexico architectural sunset" class="w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+        
+        <div class="relative z-10 h-full flex items-center justify-center text-center px-4">
+            <div class="max-w-4xl mx-auto animate-fade-in">
+                <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-light text-white mb-6 text-shadow text-balance">
+                    Websites for small businesses across Illinois.
+                </h1>
+                <div class="space-y-2 text-white/90 text-lg md:text-xl">
+                    <p class="font-serif font-light">Kevin Cuevas</p>
+                    <p class="font-serif font-light">Northern Illinois University — Computer Science</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 animate-bounce">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Featured Work Section -->
+    <section class="py-20 md:py-32 px-4">
+        <div class="container mx-auto">
+            <div class="text-center mb-16 animate-slide-up">
+                <h2 class="font-serif text-3xl md:text-4xl font-light text-warm-charcoal mb-4">
+                    Selected Work
+                </h2>
+                <p class="font-sans text-warm-charcoal/70 max-w-2xl mx-auto">
+                    Creating digital experiences that help local businesses establish their online presence with professionalism and authenticity.
+                </p>
+            </div>
+            
+            <div class="space-y-16 md:space-y-24">
+                <!-- MG Landscaping -->
+                <article class="project-card group cursor-pointer" role="article">
+                    <div class="space-y-8">
+                        <div class="text-center">
+                            <h3 class="font-serif text-2xl md:text-3xl font-light text-warm-charcoal mb-2 group-hover:text-terracotta transition-colors">
+                                MG Landscaping
+                            </h3>
+                        </div>
+                        <div>
+                            <div class="overflow-hidden rounded-lg shadow-lg">
+                                <img src="./Photos/MGLandscapingpreview.png" alt="MG Landscaping website preview" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                        </div>
+                        <div class="text-center max-w-2xl mx-auto">
+                            <p class="font-sans text-warm-charcoal/70 mb-4">Landscaping Company</p>
+                            <p class="font-sans text-warm-charcoal/60 leading-relaxed">
+                                Professional landscaping website showcasing services, portfolio gallery, and customer testimonials to attract local residential and commercial clients.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TAAG -->
+                <article class="project-card group cursor-pointer" role="article">
+                    <div class="space-y-8">
+                        <div class="text-center">
+                            <h3 class="font-serif text-2xl md:text-3xl font-light text-warm-charcoal mb-2 group-hover:text-terracotta transition-colors">
+                                TAAG
+                            </h3>
+                        </div>
+                        <div>
+                            <div class="overflow-hidden rounded-lg shadow-lg">
+                                <img src="./Photos/TAAGPreview.png" alt="TAAG website preview" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                        </div>
+                        <div class="text-center max-w-2xl mx-auto">
+                            <p class="font-sans text-warm-charcoal/70 mb-4">Restaurant & Business</p>
+                            <p class="font-sans text-warm-charcoal/60 leading-relaxed">
+                                Modern restaurant website featuring menu displays, online reservations, and event promotion to enhance the dining experience.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Unidos Rocha -->
+                <article class="project-card group cursor-pointer" role="article">
+                    <div class="space-y-8">
+                        <div class="text-center">
+                            <h3 class="font-serif text-2xl md:text-3xl font-light text-warm-charcoal mb-2 group-hover:text-terracotta transition-colors">
+                                Unidos Rocha
+                            </h3>
+                        </div>
+                        <div>
+                            <div class="overflow-hidden rounded-lg shadow-lg">
+                                <img src="./Photos/unidosrochapreview.png" alt="Unidos Rocha website preview" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                        </div>
+                        <div class="text-center max-w-2xl mx-auto">
+                            <p class="font-sans text-warm-charcoal/70 mb-4">Hispanic-Owned Business</p>
+                            <p class="font-sans text-warm-charcoal/60 leading-relaxed">
+                                Culturally-responsive website serving the Hispanic community with bilingual content and authentic local business representation.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="text-center mt-16">
+                <a href="work.html" class="inline-block font-sans text-warm-charcoal hover:text-terracotta transition-colors border-b border-warm-charcoal/30 hover:border-terracotta/60 pb-1 focus-ring rounded-sm">
+                    View All Work →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Showcase Section -->
+    <section class="py-20 md:py-32 px-4 bg-warm-charcoal text-white">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-serif text-3xl md:text-4xl font-light mb-6">
+                        Designed for mobile first.
+                    </h2>
+                    <p class="font-serif text-xl md:text-2xl font-light mb-6 text-white/90">
+                        Because most customers already are.
+                    </p>
+                    <p class="font-sans text-white/70 leading-relaxed mb-8">
+                        Every website is crafted to provide an exceptional experience on smartphones, ensuring your business looks professional and trustworthy to customers browsing on the go.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-soft-sky" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="font-sans text-sm">Responsive Design</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-soft-sky" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="font-sans text-sm">Touch-Friendly</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-soft-sky" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="font-sans text-sm">Fast Loading</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-[500px] bg-black rounded-[3rem] p-4 shadow-2xl">
+                            <div class="w-full h-full bg-warm-cream rounded-[2rem] overflow-hidden">
+                                <img src="./Photos/MGLandscapingpreview.png" alt="Mobile website preview" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-br from-soft-sky/20 to-transparent rounded-[3rem] pointer-events-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Section -->
+    <section class="py-20 md:py-32 px-4">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl md:text-4xl font-light text-warm-charcoal mb-4">
+                    Transformation
+                </h2>
+                <p class="font-sans text-warm-charcoal/70 max-w-2xl mx-auto">
+                    From a Facebook page and phone number to a real online presence.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+                <div class="text-center">
+                    <div class="bg-gray-100 rounded-lg p-8 mb-4">
+                        <div class="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
+                            <div class="text-gray-400 text-center">
+                                <svg class="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                                <p class="text-sm">Before: Outdated Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl text-warm-charcoal mb-2">Before</h3>
+                    <p class="font-sans text-warm-charcoal/60 text-sm">Dull, cluttered, unprofessional</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-warm-cream rounded-lg p-8 mb-4 border border-sandstone/20">
+                        <div class="aspect-video bg-sandstone/10 rounded-lg flex items-center justify-center">
+                            <div class="text-terracotta/60 text-center">
+                                <svg class="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                                <p class="text-sm">After: Modern Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl text-warm-charcoal mb-2">After</h3>
+                    <p class="font-sans text-warm-charcoal/60 text-sm">Clean, professional, trustworthy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="py-20 md:py-32 px-4 bg-sandstone/10">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="aspect-square bg-warm-charcoal/10 rounded-lg overflow-hidden">
+                        <img src="./Photos/grad.jpeg" alt="Kevin Cuevas graduation photo" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-serif text-3xl md:text-4xl font-light text-warm-charcoal mb-6">
+                        About Kevin
+                    </h2>
+                    <p class="font-sans text-warm-charcoal/70 leading-relaxed mb-6">
+                        Computer Science student at Northern Illinois University creating websites for local businesses. I focus on clean, professional designs that help small businesses establish their online presence with authenticity and trust.
+                    </p>
+                    <p class="font-sans text-warm-charcoal/70 leading-relaxed mb-8">
+                        My approach combines technical expertise with an understanding of what local businesses need to connect with their customers online.
+                    </p>
+                    <a href="about.html" class="inline-block font-sans text-warm-charcoal hover:text-terracotta transition-colors border-b border-warm-charcoal/30 hover:border-terracotta/60 pb-1 focus-ring rounded-sm">
+                        Learn More →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="py-20 md:py-32 px-4 bg-warm-charcoal text-white relative overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="./Photos/IMG_8592.jpeg" alt="Background" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-b from-warm-charcoal/90 via-warm-charcoal/95 to-warm-charcoal"></div>
+        </div>
+        <div class="container mx-auto text-center relative z-10">
+            <h2 class="font-serif text-3xl md:text-4xl font-light mb-8">
+                Let's build something that feels real.
+            </h2>
+            <p class="font-sans text-white/70 mb-12 max-w-2xl mx-auto">
+                Ready to establish your professional online presence? Let's discuss how we can create a website that represents your business with authenticity and care.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="contact.html" class="inline-block font-sans bg-white text-warm-charcoal px-8 py-3 rounded-sm hover:bg-warm-cream transition-colors focus-ring">
+                    Start a Project
+                </a>
+                <div class="flex gap-6">
+                    <a href="#" class="text-white/70 hover:text-white transition-colors focus-ring rounded-sm p-2" aria-label="WhatsApp">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-white/70 hover:text-white transition-colors focus-ring rounded-sm p-2" aria-label="Email">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-white/70 hover:text-white transition-colors focus-ring rounded-sm p-2" aria-label="Facebook">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-warm-charcoal text-white py-12 px-4">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-serif text-xl mb-4">Kevin Cuevas</h3>
+                    <p class="font-sans text-white/70 text-sm leading-relaxed">
+                        Computer Science student at Northern Illinois University creating websites for local businesses.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-serif text-lg mb-4">Contact</h4>
+                    <div class="space-y-2 font-sans text-white/70 text-sm">
+                        <p>Email: placeholder@email.com</p>
+                        <p>WhatsApp: (555) 123-4567</p>
+                        <p>Facebook: @kevincuevas</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-serif text-lg mb-4">Navigation</h4>
+                    <div class="space-y-2 font-sans text-sm">
+                        <a href="index.html" class="block text-white/70 hover:text-white transition-colors">Home</a>
+                        <a href="work.html" class="block text-white/70 hover:text-white transition-colors">Work</a>
+                        <a href="about.html" class="block text-white/70 hover:text-white transition-colors">About</a>
+                        <a href="contact.html" class="block text-white/70 hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/20 pt-8 text-center">
+                <p class="font-sans text-white/50 text-sm">© 2026 Kevin Cuevas. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a 
+        href="#" 
+        id="whatsapp-float"
+        class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-colors focus-ring z-30 flex items-center justify-center"
+        aria-label="Contact on WhatsApp"
+    >
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="./src/main.js"></script>
+</body>
+</html>

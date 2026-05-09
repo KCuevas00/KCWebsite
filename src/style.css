@@ -1,0 +1,85 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FAF7F0;
+    color: #4A4A4A;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+/* Custom components */
+@layer components {
+  .hero-overlay {
+    background: linear-gradient(to bottom, rgba(74, 74, 74, 0.3), rgba(74, 74, 74, 0.6));
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card {
+    transition: all 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .mobile-menu-overlay {
+    backdrop-filter: blur(10px);
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-slow-zoom {
+      animation: none;
+    }
+    
+    html {
+      scroll-behavior: auto;
+    }
+    
+    .project-card {
+      transition: none;
+    }
+    
+    .project-card:hover {
+      transform: none;
+    }
+    
+    .animate-fade-in {
+      animation: none;
+      opacity: 1;
+    }
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-soft-sky focus:ring-offset-2 focus:ring-offset-warm-cream;
+  }
+}
