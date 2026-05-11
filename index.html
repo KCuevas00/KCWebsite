@@ -15,7 +15,7 @@
         <nav class="container mx-auto px-4 py-4" role="navigation" aria-label="Main navigation">
             <div class="grid grid-cols-3 items-center">
                 <div class="flex justify-start">
-                    <a href="index.html" class="font-sans text-sm font-medium text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm" aria-label="Home">
+                    <a href="index.html" data-translate="nav_home" class="font-sans text-sm font-medium text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm" aria-label="Home">
                         HOME
                     </a>
                 </div>
@@ -42,7 +42,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
-                    <button class="hidden md:block text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2 border border-warm-charcoal/20 hover:border-terracotta/40">
+                    <button data-translate="nav_menu" class="hidden md:block text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2 border border-warm-charcoal/20 hover:border-terracotta/40">
                         Menu
                     </button>
                 </div>
@@ -53,10 +53,10 @@
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu" class="fixed inset-0 z-40 bg-warm-cream/95 mobile-menu-overlay hidden" role="dialog" aria-modal="true" aria-label="Navigation menu">
         <div class="flex flex-col items-center justify-center h-full space-y-8 text-2xl font-serif">
-            <a href="index.html" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">HOME</a>
-            <a href="work.html" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">WORK</a>
-            <a href="about.html" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">ABOUT</a>
-            <a href="contact.html" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">CONTACT</a>
+            <a href="index.html" data-translate="nav_home" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">HOME</a>
+            <a href="work.html" data-translate="nav_work" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">WORK</a>
+            <a href="about.html" data-translate="nav_about" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">ABOUT</a>
+            <a href="contact.html" data-translate="nav_contact" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">CONTACT</a>
             
             <div class="flex items-center gap-4 text-lg pt-8 border-t border-sandstone/20">
                 <button class="language-toggle flex items-center gap-3 text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2" data-lang="en" aria-label="English language">
@@ -69,7 +69,7 @@
                 </button>
             </div>
         </div>
-        <button id="close-menu-btn" class="absolute top-6 right-6 text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm p-2" aria-label="Close menu">
+        <button id="close-menu-btn" data-translate="nav_close" class="absolute top-6 right-6 text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm p-2" aria-label="Close menu">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
@@ -85,12 +85,12 @@
         
         <div class="relative z-10 h-full flex items-center justify-center text-center px-4">
             <div class="max-w-4xl mx-auto animate-fade-in">
-                <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-light text-white mb-6 text-shadow text-balance">
+                <h1 data-translate="hero_title" class="font-serif text-4xl md:text-6xl lg:text-7xl font-light text-white mb-6 text-shadow text-balance">
                     Simple websites for Illinois small businesses.
                 </h1>
                 <div class="space-y-2 text-white/90 text-lg md:text-xl">
-                    <p class="font-serif font-light">Kevin Cuevas</p>
-                    <p class="font-serif font-light">Northern Illinois University — Computer Science</p>
+                    <p data-translate="hero_name" class="font-serif font-light">Kevin Cuevas</p>
+                    <p data-translate="hero_education" class="font-serif font-light">Northern Illinois University — Computer Science</p>
                 </div>
             </div>
         </div>
@@ -107,10 +107,10 @@
     <section class="py-20 md:py-32 px-4">
         <div class="container mx-auto">
             <div class="text-center mb-16 animate-slide-up">
-                <h2 class="font-serif text-3xl md:text-4xl font-light text-warm-charcoal mb-4">
+                <h2 data-translate="featured_work_title" class="font-serif text-3xl md:text-4xl font-light text-warm-charcoal mb-4">
                     Selected Work
                 </h2>
-                <p class="font-sans text-warm-charcoal/70 max-w-2xl mx-auto">
+                <p data-translate="featured_work_desc" class="font-sans text-warm-charcoal/70 max-w-2xl mx-auto">
                     I build clean, functional websites that help local businesses get found online.
                 </p>
             </div>
@@ -118,73 +118,79 @@
             <div class="space-y-16 md:space-y-24">
                 <!-- MG Landscaping -->
                 <article class="project-card group cursor-pointer" role="article">
-                    <div class="space-y-8">
-                        <div class="text-center">
-                            <h3 class="font-serif text-2xl md:text-3xl font-light text-warm-charcoal mb-2 group-hover:text-terracotta transition-colors">
-                                M&G Landscaping
-                            </h3>
-                        </div>
-                        <div>
-                            <div class="overflow-hidden rounded-lg shadow-lg">
-                                <img src="./Photos/MGLandscapingpreview.png" alt="MG Landscaping website preview" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                    <a href="https://mg-landscaping.org" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="space-y-8">
+                            <div class="text-center">
+                                <h3 data-translate="project_mg_title" class="font-serif text-2xl md:text-3xl font-light text-warm-charcoal mb-2 group-hover:text-terracotta transition-colors">
+                                    M&G Landscaping
+                                </h3>
+                            </div>
+                            <div>
+                                <div class="overflow-hidden rounded-lg shadow-lg">
+                                    <img src="./Photos/MGLandscapingpreview.png" alt="MG Landscaping website preview" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                                </div>
+                            </div>
+                            <div class="text-center max-w-2xl mx-auto">
+                                <p data-translate="project_mg_category" class="font-sans text-warm-charcoal/70 mb-4">Landscaping Company</p>
+                                <p data-translate="project_mg_desc" class="font-sans text-warm-charcoal/60 leading-relaxed">
+                                    Professional landscaping website showcasing services, portfolio gallery, and customer testimonials to attract local residential and commercial clients.
+                                </p>
                             </div>
                         </div>
-                        <div class="text-center max-w-2xl mx-auto">
-                            <p class="font-sans text-warm-charcoal/70 mb-4">Landscaping Company</p>
-                            <p class="font-sans text-warm-charcoal/60 leading-relaxed">
-                                Professional landscaping website showcasing services, portfolio gallery, and customer testimonials to attract local residential and commercial clients.
-                            </p>
-                        </div>
-                    </div>
+                    </a>
                 </article>
 
                 <!-- TAAG -->
                 <article class="project-card group cursor-pointer" role="article">
-                    <div class="space-y-8">
-                        <div class="text-center">
-                            <h3 class="font-serif text-2xl md:text-3xl font-light text-warm-charcoal mb-2 group-hover:text-terracotta transition-colors">
-                                TAAG Quality Construction Inc.
-                            </h3>
-                        </div>
-                        <div>
-                            <div class="overflow-hidden rounded-lg shadow-lg">
-                                <img src="./Photos/TAAGPreview.png" alt="TAAG website preview" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                    <a href="https://taagqualityconstructioninc.com" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="space-y-8">
+                            <div class="text-center">
+                                <h3 data-translate="project_taag_title" class="font-serif text-2xl md:text-3xl font-light text-warm-charcoal mb-2 group-hover:text-terracotta transition-colors">
+                                    TAAG Quality Construction Inc.
+                                </h3>
+                            </div>
+                            <div>
+                                <div class="overflow-hidden rounded-lg shadow-lg">
+                                    <img src="./Photos/TAAGPreview.png" alt="TAAG website preview" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                                </div>
+                            </div>
+                            <div class="text-center max-w-2xl mx-auto">
+                                <p data-translate="project_taag_category" class="font-sans text-warm-charcoal/70 mb-4">Restaurant & Business</p>
+                                <p data-translate="project_taag_desc" class="font-sans text-warm-charcoal/60 leading-relaxed">
+                                    Modern restaurant website featuring menu displays, online reservations, and event promotion to enhance the dining experience.
+                                </p>
                             </div>
                         </div>
-                        <div class="text-center max-w-2xl mx-auto">
-                            <p class="font-sans text-warm-charcoal/70 mb-4">Restaurant & Business</p>
-                            <p class="font-sans text-warm-charcoal/60 leading-relaxed">
-                                Modern restaurant website featuring menu displays, online reservations, and event promotion to enhance the dining experience.
-                            </p>
-                        </div>
-                    </div>
+                    </a>
                 </article>
 
                 <!-- Unidos Rocha -->
                 <article class="project-card group cursor-pointer" role="article">
-                    <div class="space-y-8">
-                        <div class="text-center">
-                            <h3 class="font-serif text-2xl md:text-3xl font-light text-warm-charcoal mb-2 group-hover:text-terracotta transition-colors">
-                                Unidos Rocha
-                            </h3>
-                        </div>
-                        <div>
-                            <div class="overflow-hidden rounded-lg shadow-lg">
-                                <img src="./Photos/unidosrochapreview.png" alt="Unidos Rocha website preview" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                    <a href="https://unidosrocha.com" target="_blank" rel="noopener noreferrer" class="block">
+                        <div class="space-y-8">
+                            <div class="text-center">
+                                <h3 data-translate="project_unidos_title" class="font-serif text-2xl md:text-3xl font-light text-warm-charcoal mb-2 group-hover:text-terracotta transition-colors">
+                                    Unidos Rocha
+                                </h3>
+                            </div>
+                            <div>
+                                <div class="overflow-hidden rounded-lg shadow-lg">
+                                    <img src="./Photos/unidosrochapreview.png" alt="Unidos Rocha website preview" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+                                </div>
+                            </div>
+                            <div class="text-center max-w-2xl mx-auto">
+                                <p data-translate="project_unidos_category" class="font-sans text-warm-charcoal/70 mb-4">Hispanic-Owned Business</p>
+                                <p data-translate="project_unidos_desc" class="font-sans text-warm-charcoal/60 leading-relaxed">
+                                    Culturally-responsive website serving the Hispanic community with bilingual content and authentic local business representation.
+                                </p>
                             </div>
                         </div>
-                        <div class="text-center max-w-2xl mx-auto">
-                            <p class="font-sans text-warm-charcoal/70 mb-4">Hispanic-Owned Business</p>
-                            <p class="font-sans text-warm-charcoal/60 leading-relaxed">
-                                Culturally-responsive website serving the Hispanic community with bilingual content and authentic local business representation.
-                            </p>
-                        </div>
-                    </div>
+                    </a>
                 </article>
             </div>
             
             <div class="text-center mt-16">
-                <a href="work.html" class="inline-block font-sans text-warm-charcoal hover:text-terracotta transition-colors border-b border-warm-charcoal/30 hover:border-terracotta/60 pb-1 focus-ring rounded-sm">
+                <a href="work.html" data-translate="view_all_work" class="inline-block font-sans text-warm-charcoal hover:text-terracotta transition-colors border-b border-warm-charcoal/30 hover:border-terracotta/60 pb-1 focus-ring rounded-sm">
                     View All Work →
                 </a>
             </div>
@@ -196,11 +202,11 @@
         <div class="container mx-auto">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 class="font-serif text-3xl md:text-4xl font-light mb-6">
+                    <h2 data-translate="mobile_title" class="font-serif text-3xl md:text-4xl font-light mb-6">
                         Designed for mobile first.
                     </h2>
 
-                    <p class="font-sans text-white/70 leading-relaxed mb-8">
+                    <p data-translate="mobile_desc" class="font-sans text-white/70 leading-relaxed mb-8">
                         Every website is designed with the mobile layout in mind first to ensure a simple and easy experience across all devices. 
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
@@ -208,19 +214,19 @@
                             <svg class="w-5 h-5 text-soft-sky" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                             </svg>
-                            <span class="font-sans text-sm">Responsive Design</span>
+                            <span data-translate="mobile_responsive" class="font-sans text-sm">Responsive Design</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <svg class="w-5 h-5 text-soft-sky" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                             </svg>
-                            <span class="font-sans text-sm">Touch-Friendly</span>
+                            <span data-translate="mobile_touch" class="font-sans text-sm">Touch-Friendly</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <svg class="w-5 h-5 text-soft-sky" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                             </svg>
-                            <span class="font-sans text-sm">Fast Loading</span>
+                            <span data-translate="mobile_fast" class="font-sans text-sm">Fast Loading</span>
                         </div>
                     </div>
                 </div>
@@ -238,47 +244,110 @@
         </div>
     </section>
 
-    <!-- Before/After Section -->
+    <!-- How I Work + What You Get Section -->
     <section class="py-20 md:py-32 px-4">
         <div class="container mx-auto">
             <div class="text-center mb-16">
-                <h2 class="font-serif text-3xl md:text-4xl font-light text-warm-charcoal mb-4">
-                    Transformation
+                <h2 data-translate="how_work_title" class="font-serif text-3xl md:text-4xl font-light text-warm-charcoal mb-4">
+                    How I Work + What You Get
                 </h2>
-                <p class="font-sans text-warm-charcoal/70 max-w-2xl mx-auto">
-                    From a Facebook page and phone number to a real online presence.
+                <p data-translate="how_work_subtitle" class="font-sans text-warm-charcoal/70 max-w-2xl mx-auto">
+                    A simple process, clear deliverables
                 </p>
             </div>
             
             <div class="grid md:grid-cols-2 gap-8 md:gap-12">
-                <div class="text-center">
-                    <div class="bg-gray-100 rounded-lg p-8 mb-4">
-                        <div class="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-                            <div class="text-gray-400 text-center">
-                                <svg class="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                </svg>
-                                <p class="text-sm">Before: Outdated Design</p>
+                <!-- How I Work -->
+                <div class="bg-sandstone/10 rounded-lg p-8">
+                    <h3 data-translate="how_work_section" class="font-serif text-2xl font-light text-warm-charcoal mb-6 text-center">
+                        How I Work
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-terracotta text-white rounded-full flex items-center justify-center flex-shrink-0 font-serif text-sm">1</div>
+                            <div>
+                                <h4 data-translate="step1_title" class="font-serif text-lg text-warm-charcoal mb-1">Discovery</h4>
+                                <p data-translate="step1_desc" class="font-sans text-warm-charcoal/60 text-sm">Understand your business, goals, and style</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-dusty-orange text-white rounded-full flex items-center justify-center flex-shrink-0 font-serif text-sm">2</div>
+                            <div>
+                                <h4 data-translate="step2_title" class="font-serif text-lg text-warm-charcoal mb-1">Design & Build</h4>
+                                <p data-translate="step2_desc" class="font-sans text-warm-charcoal/60 text-sm">Create a clean, modern website tailored to your business</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-soft-sky text-white rounded-full flex items-center justify-center flex-shrink-0 font-serif text-sm">3</div>
+                            <div>
+                                <h4 data-translate="step3_title" class="font-serif text-lg text-warm-charcoal mb-1">Launch & Support</h4>
+                                <p data-translate="step3_desc" class="font-sans text-warm-charcoal/60 text-sm">Publish the site and provide support if needed</p>
                             </div>
                         </div>
                     </div>
-                    <h3 class="font-serif text-xl text-warm-charcoal mb-2">Before</h3>
-                    <p class="font-sans text-warm-charcoal/60 text-sm">Dull, cluttered, unprofessional</p>
                 </div>
                 
-                <div class="text-center">
-                    <div class="bg-warm-cream rounded-lg p-8 mb-4 border border-sandstone/20">
-                        <div class="aspect-video bg-sandstone/10 rounded-lg flex items-center justify-center">
-                            <div class="text-terracotta/60 text-center">
-                                <svg class="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                </svg>
-                                <p class="text-sm">After: Modern Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="font-serif text-xl text-warm-charcoal mb-2">After</h3>
-                    <p class="font-sans text-warm-charcoal/60 text-sm">Clean, professional, trustworthy</p>
+                <!-- What You Get -->
+                <div class="bg-warm-charcoal text-white rounded-lg p-8">
+                    <h3 data-translate="what_get_section" class="font-serif text-2xl font-light mb-6 text-center">
+                        What You Get
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-terracotta flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span data-translate="deliverable1" class="font-sans text-white/80 text-sm">Desktop website designed for your business</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-terracotta flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span data-translate="deliverable2" class="font-sans text-white/80 text-sm">Mobile-friendly responsive design</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-terracotta flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span data-translate="deliverable3" class="font-sans text-white/80 text-sm">Contact forms so customers can reach you easily</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-terracotta flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span data-translate="deliverable4" class="font-sans text-white/80 text-sm">Click-to-call phone and WhatsApp integration</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-terracotta flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span data-translate="deliverable5" class="font-sans text-white/80 text-sm">Basic SEO setup for visibility</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-terracotta flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span data-translate="deliverable6" class="font-sans text-white/80 text-sm">Hosting setup guidance</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-terracotta flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span data-translate="deliverable7" class="font-sans text-white/80 text-sm">Custom domain setup guidance (yourbusiness.com)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-terracotta flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span data-translate="deliverable8" class="font-sans text-white/80 text-sm">Fast loading performance</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-terracotta flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span data-translate="deliverable9" class="font-sans text-white/80 text-sm">Post-launch support and small edits</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -294,19 +363,19 @@
                     </div>
                 </div>
                 <div>
-                    <h2 class="font-serif text-3xl md:text-4xl font-light text-warm-charcoal mb-6">
+                    <h2 data-translate="about_preview_title" class="font-serif text-3xl md:text-4xl font-light text-warm-charcoal mb-6">
                         About Me
                     </h2>
-                    <p class="font-sans text-warm-charcoal/70 leading-relaxed mb-6">
-                        I’m currently pursuing my Master’s in Computer Science at Northern Illinois University while building websites for local businesses in my community.
+                    <p data-translate="about_preview_p1" class="font-sans text-warm-charcoal/70 leading-relaxed mb-6">
+                        I'm currently pursuing my Master's in Computer Science at Northern Illinois University while building websites for local businesses in my community.
                     </p>
-                    <p class="font-sans text-warm-charcoal/70 leading-relaxed mb-8">
+                    <p data-translate="about_preview_p2" class="font-sans text-warm-charcoal/70 leading-relaxed mb-8">
                         I started doing this as a way to keep learning and growing as a developer, but it quickly turned into something I genuinely enjoy. I love helping small businesses create a professional online presence that still feels personal and authentic.
                     </p>
-                                        <p class="font-sans text-warm-charcoal/70 leading-relaxed mb-8">
+                    <p data-translate="about_preview_p3" class="font-sans text-warm-charcoal/70 leading-relaxed mb-8">
                         I learn something new with every project. You'll probably see my style evolve as I grow. 
                     </p>
-                    <a href="about.html" class="inline-block font-sans text-warm-charcoal hover:text-terracotta transition-colors border-b border-warm-charcoal/30 hover:border-terracotta/60 pb-1 focus-ring rounded-sm">
+                    <a href="about.html" data-translate="learn_more" class="inline-block font-sans text-warm-charcoal hover:text-terracotta transition-colors border-b border-warm-charcoal/30 hover:border-terracotta/60 pb-1 focus-ring rounded-sm">
                         Learn More →
                     </a>
                 </div>
@@ -321,28 +390,28 @@
             <div class="absolute inset-0 bg-gradient-to-b from-warm-charcoal/90 via-warm-charcoal/95 to-warm-charcoal"></div>
         </div>
         <div class="container mx-auto text-center relative z-10">
-            <h2 class="font-serif text-3xl md:text-4xl font-light mb-8">
+            <h2 data-translate="footer_cta_title" class="font-serif text-3xl md:text-4xl font-light mb-8">
                 Let's build something that feels real.
             </h2>
-            <p class="font-sans text-white/70 mb-12 max-w-2xl mx-auto">
+            <p data-translate="footer_cta_desc" class="font-sans text-white/70 mb-12 max-w-2xl mx-auto">
                 Ready to establish your professional online presence? Let's discuss how we can create a website that represents your business with authenticity and care.
             </p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <a href="contact.html" class="inline-block font-sans bg-white text-warm-charcoal px-8 py-3 rounded-sm hover:bg-warm-cream transition-colors focus-ring">
+                <a href="contact.html" data-translate="start_project" class="inline-block font-sans bg-white text-warm-charcoal px-8 py-3 rounded-sm hover:bg-warm-cream transition-colors focus-ring">
                     Start a Project
                 </a>
                 <div class="flex gap-6">
-                    <a href="#" class="text-white/70 hover:text-white transition-colors focus-ring rounded-sm p-2" aria-label="WhatsApp">
+                    <a href="https://wa.me/18155032302" class="text-white/70 hover:text-white transition-colors focus-ring rounded-sm p-2" aria-label="WhatsApp">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                         </svg>
                     </a>
-                    <a href="#" class="text-white/70 hover:text-white transition-colors focus-ring rounded-sm p-2" aria-label="Email">
+                    <a href="mailto:cuevask00@gmail.com" class="text-white/70 hover:text-white transition-colors focus-ring rounded-sm p-2" aria-label="Email">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                         </svg>
                     </a>
-                    <a href="#" class="text-white/70 hover:text-white transition-colors focus-ring rounded-sm p-2" aria-label="Facebook">
+                    <a href="https://www.facebook.com/kevin.cuevas.359/" class="text-white/70 hover:text-white transition-colors focus-ring rounded-sm p-2" aria-label="Facebook">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                         </svg>
@@ -357,38 +426,39 @@
         <div class="container mx-auto">
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div>
-                    <h3 class="font-serif text-xl mb-4">Kevin Cuevas</h3>
-                    <p class="font-sans text-white/70 text-sm leading-relaxed">
+                    <h3 data-translate="footer_name" class="font-serif text-xl mb-4">Kevin Cuevas</h3>
+                    <p data-translate="footer_desc" class="font-sans text-white/70 text-sm leading-relaxed">
                         Computer Science student at Northern Illinois University creating websites for local businesses.
                     </p>
                 </div>
                 <div>
-                    <h4 class="font-serif text-lg mb-4">Contact</h4>
+                    <h4 data-translate="footer_contact_title" class="font-serif text-lg mb-4">Contact</h4>
                     <div class="space-y-2 font-sans text-white/70 text-sm">
-                        <p>Email: Cuevask00@gmail.com</p>
-                        <p>WhatsApp: (815) 503-2302</p>
-                        <p>Facebook: @kevincuevas00</p>
+                        <p><span data-translate="footer_phone_label">Phone:</span> <a href="tel:+18155032302" class="hover:text-white transition-colors">+1 (815) 503-2302</a></p>
+                        <p><span data-translate="footer_whatsapp_label">WhatsApp:</span> <a href="https://wa.me/18155032302" class="hover:text-white transition-colors">+1 (815) 503-2302</a></p>
+                        <p><span data-translate="footer_email_label">Email:</span> <a href="mailto:cuevask00@gmail.com" class="hover:text-white transition-colors">cuevask00@gmail.com</a></p>
+                        <p><span data-translate="footer_facebook_label">Facebook:</span> <a href="https://www.facebook.com/kevin.cuevas.359/" class="hover:text-white transition-colors">kevin.cuevas.359</a></p>
                     </div>
                 </div>
                 <div>
-                    <h4 class="font-serif text-lg mb-4">Navigation</h4>
+                    <h4 data-translate="footer_nav_title" class="font-serif text-lg mb-4">Navigation</h4>
                     <div class="space-y-2 font-sans text-sm">
-                        <a href="index.html" class="block text-white/70 hover:text-white transition-colors">Home</a>
-                        <a href="work.html" class="block text-white/70 hover:text-white transition-colors">Work</a>
-                        <a href="about.html" class="block text-white/70 hover:text-white transition-colors">About</a>
-                        <a href="contact.html" class="block text-white/70 hover:text-white transition-colors">Contact</a>
+                        <a href="index.html" data-translate="nav_home" class="block text-white/70 hover:text-white transition-colors">Home</a>
+                        <a href="work.html" data-translate="nav_work" class="block text-white/70 hover:text-white transition-colors">Work</a>
+                        <a href="about.html" data-translate="nav_about" class="block text-white/70 hover:text-white transition-colors">About</a>
+                        <a href="contact.html" data-translate="nav_contact" class="block text-white/70 hover:text-white transition-colors">Contact</a>
                     </div>
                 </div>
             </div>
             <div class="border-t border-white/20 pt-8 text-center">
-                <p class="font-sans text-white/50 text-sm">© 2026 Kevin Cuevas. All rights reserved.</p>
+                <p data-translate="footer_copyright" class="font-sans text-white/50 text-sm">© 2026 Kevin Cuevas. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- WhatsApp Floating Button -->
     <a 
-        href="#" 
+        href="https://wa.me/18155032302" 
         id="whatsapp-float"
         class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-colors focus-ring z-30 flex items-center justify-center"
         aria-label="Contact on WhatsApp"
