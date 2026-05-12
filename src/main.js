@@ -30,7 +30,7 @@ const translations = {
         hero_contact_desc: 'Need a website for your Illinois business? I can help you get online quickly and affordably.',
 
         // Featured Work Section
-        featured_work_title: 'Selected Work',
+        featured_work_title: 'Featured Work',
         featured_work_desc: 'I build clean, functional websites that help local businesses get found online.',
 
         // Project 1 - M&G Landscaping
@@ -222,7 +222,7 @@ const translations = {
         hero_contact_desc: '¿Necesita un sitio web para su negocio en Illinois? Puedo ayudarle a estar en línea de manera rápida y asequible.',
 
         // Featured Work Section
-        featured_work_title: 'Trabajo Seleccionado',
+        featured_work_title: 'Trabajo Destacado',
         featured_work_desc: 'Construyo sitios web limpios y funcionales que ayudan a las pequeñas empresas a ser encontradas en línea.',
 
         // Project 1 - M&G Landscaping
