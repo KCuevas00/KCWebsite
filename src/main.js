@@ -65,12 +65,12 @@ const translations = {
         how_work_subtitle: 'A simple process, clear deliverables',
 
         how_work_section: 'How I Work',
-        step1_title: 'Discovery',
-        step1_desc: 'Understand your business, goals, and style',
+        step1_title: 'Send me your info',
+        step1_desc: 'You send your contact details, business information, photos you want on the site, and any social media links.',
         step2_title: 'Design & Build',
-        step2_desc: 'Create a clean, modern website tailored to your business',
-        step3_title: 'Launch & Support',
-        step3_desc: 'Publish the site and provide support if needed',
+        step2_desc: 'I\'ll create a clean, modern website tailored to your business',
+        step3_title: 'Launch',
+        step3_desc: 'I\'ll send you previews of the site. Once everything looks good, we set up your custom domain and publish it live.',
 
         what_get_section: 'What You Get',
         deliverable1: 'Desktop website designed for your business',
@@ -257,12 +257,12 @@ const translations = {
         how_work_subtitle: 'Un proceso simple, entregables claros',
 
         how_work_section: 'Cómo Trabajo',
-        step1_title: 'Descubrimiento',
-        step1_desc: 'Entender su negocio, objetivos y estilo',
+        step1_title: 'Envíame tu información',
+        step1_desc: 'Envías tus datos de contacto, información del negocio, fotos que quieres en el sitio y enlaces de redes sociales.',
         step2_title: 'Diseño y Construcción',
-        step2_desc: 'Crear un sitio web limpio y moderno adaptado a su negocio',
-        step3_title: 'Lanzamiento y Soporte',
-        step3_desc: 'Publicar el sitio y proporcionar soporte si es necesario',
+        step2_desc: 'Creo un sitio web limpio y moderno adaptado a tu negocio',
+        step3_title: 'Lanzamiento',
+        step3_desc: 'Te envío vistas previas del sitio. Una vez que todo se ve bien, configuramos tu dominio personalizado y lo publicamos en vivo.',
 
         what_get_section: 'Lo Que Recibes',
         deliverable1: 'Sitio web de escritorio diseñado para su negocio',
@@ -619,13 +619,35 @@ function initWhatsAppButton() {
     }
 }
 
+// EARLY LANGUAGE INITIALIZATION - Run before DOM is visible
+(function initLanguageEarly() {
+    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+    const t = translations[savedLang];
+    if (!t) return;
+
+    // Apply translations immediately to prevent flash of wrong language
+    document.querySelectorAll('[data-translate]').forEach(el => {
+        const key = el.getAttribute('data-translate');
+        if (t[key]) {
+            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                el.placeholder = t[key];
+            } else {
+                el.textContent = t[key];
+            }
+        }
+    });
+
+    // Set HTML lang attribute
+    document.documentElement.lang = savedLang;
+})();
+
 // Initialize all functionality
 document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initDesktopMenu();
     initWhatsAppButton();
     initLanguageToggle();
-    
+
     // Add loaded class to body for CSS transitions
     document.body.classList.add('loaded');
 });
