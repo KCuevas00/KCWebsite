@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About — Kevin Cuevas</title>
-    <meta name="description" content="Learn about Kevin Cuevas, Computer Science student at Northern Illinois University creating websites for local businesses.">
+    <meta name="description" content="Learn about Kevin Cuevas, Computer Science student at Northern Illinois University creating websites for local businesses.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script type="module" crossorigin src="./assets/main-CIrG5Qlr.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-COfc4UPk.css">
+  <script type="module" crossorigin src="./assets/main-BWCRDQuT.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-C0BFS-Ev.css">
 </head>
 <body class="bg-warm-cream">
     <!-- Navigation -->
@@ -16,9 +16,7 @@
         <nav class="container mx-auto px-4 py-4" role="navigation" aria-label="Main navigation">
             <div class="grid grid-cols-3 items-center">
                 <div class="flex justify-start">
-                    <a href="index.html" class="font-sans text-sm font-medium text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm" aria-label="Home">
-                        HOME
-                    </a>
+                    <a href="index.html" data-translate="nav_home" class="font-sans text-sm font-medium text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm" aria-label="Home"></a>
                 </div>
                 
                 <div class="flex justify-center">
@@ -43,9 +41,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
-                    <button class="hidden md:block text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2 border border-warm-charcoal/20 hover:border-terracotta/40">
-                        Menu
-                    </button>
+                    <button data-translate="nav_menu" class="hidden md:block text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2 border border-warm-charcoal/20 hover:border-terracotta/40"></button>
                 </div>
             </div>
         </nav>
@@ -54,10 +50,10 @@
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu" class="fixed inset-0 z-40 bg-warm-cream/95 mobile-menu-overlay hidden" role="dialog" aria-modal="true" aria-label="Navigation menu">
         <div class="flex flex-col items-center justify-center h-full space-y-8 text-2xl font-serif">
-            <a href="index.html" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">HOME</a>
-            <a href="work.html" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">WORK</a>
-            <a href="about.html" class="text-terracotta hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">ABOUT</a>
-            <a href="contact.html" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2">CONTACT</a>
+            <a href="index.html" data-translate="nav_home" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2"></a>
+            <a href="work.html" data-translate="nav_work" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2"></a>
+            <a href="about.html" data-translate="nav_about" class="text-terracotta hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2"></a>
+            <a href="contact.html" data-translate="nav_contact" class="text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2"></a>
             
             <div class="flex items-center gap-4 text-lg pt-8 border-t border-sandstone/20">
                 <button class="language-toggle flex items-center gap-3 text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm px-4 py-2" data-lang="en" aria-label="English language">
@@ -70,7 +66,7 @@
                 </button>
             </div>
         </div>
-        <button id="close-menu-btn" class="absolute top-6 right-6 text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm p-2" aria-label="Close menu">
+        <button id="close-menu-btn" data-translate="nav_close" class="absolute top-6 right-6 text-warm-charcoal hover:text-terracotta transition-colors focus-ring rounded-sm p-2" aria-label="Close menu">
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
@@ -81,10 +77,10 @@
     <section class="pt-32 pb-16 px-4">
         <div class="container mx-auto">
             <div class="text-center max-w-3xl mx-auto">
-                <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-warm-charcoal mb-6">
+                <h1 data-translate="hero_about_title" class="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-warm-charcoal mb-6">
                     About Kevin
                 </h1>
-                <p class="font-sans text-lg text-warm-charcoal/70 leading-relaxed">
+                <p data-translate="hero_about_desc" class="font-sans text-lg text-warm-charcoal/70 leading-relaxed">
                     Computer Science student at Northern Illinois University creating websites for local businesses across Illinois.
                 </p>
             </div>
@@ -97,20 +93,20 @@
             <div class="grid md:grid-cols-2 gap-12 items-start mb-16">
                 <div>
                     <div class="aspect-square bg-warm-charcoal/10 rounded-lg overflow-hidden mb-6">
-                        <img src="./assets/grad-Cnn7EP3O.jpeg" alt="Kevin Cuevas graduation photo" class="w-full h-full object-cover">
+                        <img src="./assets/grad-Cnn7EP3O.JPEG" alt="Kevin Cuevas graduation photo" class="w-full h-full object-cover">
                     </div>
                 </div>
                 <div>
-                    <h2 class="font-serif text-2xl md:text-3xl font-light text-warm-charcoal mb-4">
+                    <h2 data-translate="about_title" class="font-serif text-2xl md:text-3xl font-light text-warm-charcoal mb-4">
                         About Me
                     </h2>
-                    <p class="font-sans text-warm-charcoal/70 leading-relaxed mb-6">
+                    <p data-translate="about_p1" class="font-sans text-warm-charcoal/70 leading-relaxed mb-6">
                         I'm a Computer Science student at Northern Illinois University. I build websites for local businesses because I understand what small businesses need to get found online.
                     </p>
-                    <p class="font-sans text-warm-charcoal/70 leading-relaxed mb-8">
+                    <p data-translate="about_p2" class="font-sans text-warm-charcoal/70 leading-relaxed mb-8">
                         I focus on simple, clean designs that work well and don't cost a fortune. No complicated setups or confusing tech talk - just straightforward websites that help your business grow.
                     </p>
-                    <a href="contact.html" class="inline-block font-sans text-warm-charcoal hover:text-terracotta transition-colors border-b border-warm-charcoal/30 hover:border-terracotta/60 pb-1 focus-ring rounded-sm">
+                    <a href="contact.html" data-translate="contact_me" class="inline-block font-sans text-warm-charcoal hover:text-terracotta transition-colors border-b border-warm-charcoal/30 hover:border-terracotta/60 pb-1 focus-ring rounded-sm">
                         Contact Me →
                     </a>
                 </div>
@@ -120,10 +116,10 @@
             <div class="bg-sandstone/10 rounded-lg p-8 mb-16">
                 <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h3 class="font-serif text-2xl font-light text-warm-charcoal mb-4">
+                        <h3 data-translate="education_title" class="font-serif text-2xl font-light text-warm-charcoal mb-4">
                             My Education
                         </h3>
-                        <p class="font-sans text-warm-charcoal/70 leading-relaxed mb-6">
+                        <p data-translate="education_desc" class="font-sans text-warm-charcoal/70 leading-relaxed mb-6">
                             I'm studying Computer Science at NIU and focusing on web development. My classes give me the technical skills to build websites that actually work well for businesses.
                         </p>
                         <div class="space-y-2">
@@ -131,19 +127,19 @@
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                Computer Science, B.S.
+                                <span data-translate="education_degree">Computer Science, B.S.</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-warm-charcoal/60">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                Web Development & Design
+                                <span data-translate="education_focus">Web Development & Design</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-warm-charcoal/60">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                Expected Graduation: 2027
+                                <span data-translate="education_grad">Expected Graduation: 2027</span>
                             </div>
                         </div>
                     </div>
@@ -155,7 +151,7 @@
 
             <!-- Design Philosophy -->
             <div class="mb-16">
-                <h3 class="font-serif text-2xl md:text-3xl font-light text-warm-charcoal mb-6 text-center">
+                <h3 data-translate="philosophy_title" class="font-serif text-2xl md:text-3xl font-light text-warm-charcoal mb-6 text-center">
                     How I Work
                 </h3>
                 <div class="grid md:grid-cols-3 gap-8">
@@ -165,8 +161,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                             </svg>
                         </div>
-                        <h4 class="font-serif text-lg text-warm-charcoal mb-2">Customer-Focused</h4>
-                        <p class="font-sans text-warm-charcoal/60 text-sm leading-relaxed">
+                        <h4 data-translate="philosophy_1_title" class="font-serif text-lg text-warm-charcoal mb-2">Customer-Focused</h4>
+                        <p data-translate="philosophy_1_desc" class="font-sans text-warm-charcoal/60 text-sm leading-relaxed">
                             I build websites that work for your customers - easy to use and find what they need.
                         </p>
                     </div>
@@ -176,8 +172,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <h4 class="font-serif text-lg text-warm-charcoal mb-2">Honest & Reliable</h4>
-                        <p class="font-sans text-warm-charcoal/60 text-sm leading-relaxed">
+                        <h4 data-translate="philosophy_2_title" class="font-serif text-lg text-warm-charcoal mb-2">Honest & Reliable</h4>
+                        <p data-translate="philosophy_2_desc" class="font-sans text-warm-charcoal/60 text-sm leading-relaxed">
                             I build websites that actually work and show what your business is really about.
                         </p>
                     </div>
@@ -187,8 +183,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                             </svg>
                         </div>
-                        <h4 class="font-serif text-lg text-warm-charcoal mb-2">Mobile-First</h4>
-                        <p class="font-sans text-warm-charcoal/60 text-sm leading-relaxed">
+                        <h4 data-translate="philosophy_3_title" class="font-serif text-lg text-warm-charcoal mb-2">Mobile-First</h4>
+                        <p data-translate="philosophy_3_desc" class="font-sans text-warm-charcoal/60 text-sm leading-relaxed">
                             I make sure your website works great on phones since that's where most customers will find you.
                         </p>
                     </div>
@@ -197,65 +193,65 @@
 
             <!-- Skills Section -->
             <div class="mb-16">
-                <h3 class="font-serif text-2xl md:text-3xl font-light text-warm-charcoal mb-6 text-center">
+                <h3 data-translate="skills_title" class="font-serif text-2xl md:text-3xl font-light text-warm-charcoal mb-6 text-center">
                     Technical Skills
                 </h3>
                 <div class="grid md:grid-cols-2 gap-8">
                     <div>
-                        <h4 class="font-serif text-lg text-warm-charcoal mb-4">Frontend Development</h4>
+                        <h4 data-translate="skills_frontend" class="font-serif text-lg text-warm-charcoal mb-4">Frontend Development</h4>
                         <div class="space-y-2">
                             <div class="flex items-center gap-2 text-sm text-warm-charcoal/60">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                HTML5 & Semantic Markup
+                                <span data-translate="skill_html">HTML5 & Semantic Markup</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-warm-charcoal/60">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                CSS3 & Tailwind CSS
+                                <span data-translate="skill_css">CSS3 & Tailwind CSS</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-warm-charcoal/60">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                JavaScript & Interactivity
+                                <span data-translate="skill_js">JavaScript & Interactivity</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-warm-charcoal/60">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                Responsive Design
+                                <span data-translate="skill_responsive">Responsive Design</span>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <h4 class="font-serif text-lg text-warm-charcoal mb-4">Design & UX</h4>
+                        <h4 data-translate="skills_design" class="font-serif text-lg text-warm-charcoal mb-4">Design & UX</h4>
                         <div class="space-y-2">
                             <div class="flex items-center gap-2 text-sm text-warm-charcoal/60">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                User Experience Design
+                                <span data-translate="skill_ux">User Experience Design</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-warm-charcoal/60">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                Accessibility (WCAG)
+                                <span data-translate="skill_accessibility">Accessibility (WCAG)</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-warm-charcoal/60">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                Performance Optimization
+                                <span data-translate="skill_performance">Performance Optimization</span>
                             </div>
                             <div class="flex items-center gap-2 text-sm text-warm-charcoal/60">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                SEO Best Practices
+                                <span data-translate="skill_seo">SEO Best Practices</span>
                             </div>
                         </div>
                     </div>
@@ -267,13 +263,13 @@
     <!-- CTA Section -->
     <section class="py-20 px-4 bg-sandstone/10">
         <div class="container mx-auto text-center">
-            <h2 class="font-serif text-3xl md:text-4xl font-light text-warm-charcoal mb-6">
+            <h2 data-translate="about_cta_title" class="font-serif text-3xl md:text-4xl font-light text-warm-charcoal mb-6">
                 Let's work together
             </h2>
-            <p class="font-sans text-warm-charcoal/70 mb-8 max-w-2xl mx-auto">
+            <p data-translate="about_cta_desc" class="font-sans text-warm-charcoal/70 mb-8 max-w-2xl mx-auto">
                 I'm passionate about helping local businesses establish their online presence. Let's discuss how we can create a website that represents your business with authenticity and professionalism.
             </p>
-            <a href="contact.html" class="inline-block font-sans bg-warm-charcoal text-white px-8 py-3 rounded-sm hover:bg-terracotta transition-colors focus-ring">
+            <a href="contact.html" data-translate="start_project" class="inline-block font-sans bg-warm-charcoal text-white px-8 py-3 rounded-sm hover:bg-terracotta transition-colors focus-ring">
                 Start a Project
             </a>
         </div>
@@ -281,7 +277,7 @@
 
     <!-- WhatsApp Floating Button -->
     <a 
-        href="#" 
+        href="https://wa.me/18155032302" 
         id="whatsapp-float"
         class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-colors focus-ring z-30 flex items-center justify-center"
         aria-label="Contact on WhatsApp"
@@ -296,47 +292,36 @@
         <div class="container mx-auto">
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div>
-                    <h3 class="font-serif text-xl mb-4">Kevin Cuevas</h3>
-                    <p class="font-sans text-white/70 text-sm leading-relaxed">
+                    <h3 data-translate="footer_name" class="font-serif text-xl mb-4">Kevin Cuevas</h3>
+                    <p data-translate="footer_desc" class="font-sans text-white/70 text-sm leading-relaxed">
                         Computer Science student at Northern Illinois University creating websites for local businesses.
                     </p>
                 </div>
                 <div>
-                    <h4 class="font-serif text-lg mb-4">Contact</h4>
+                    <h4 data-translate="footer_contact_title" class="font-serif text-lg mb-4">Contact</h4>
                     <div class="space-y-2 font-sans text-white/70 text-sm">
-                        <p>Email: placeholder@email.com</p>
-                        <p>WhatsApp: (555) 123-4567</p>
-                        <p>Facebook: @kevincuevas</p>
+                        <p><span data-translate="footer_phone_label">Phone:</span> <a href="tel:+18155032302" class="hover:text-white transition-colors">+1 (815) 503-2302</a></p>
+                        <p><span data-translate="footer_whatsapp_label">WhatsApp:</span> <a href="https://wa.me/18155032302" class="hover:text-white transition-colors">+1 (815) 503-2302</a></p>
+                        <p><span data-translate="footer_email_label">Email:</span> <a href="mailto:cuevask00@gmail.com" class="hover:text-white transition-colors">cuevask00@gmail.com</a></p>
+                        <p><span data-translate="footer_facebook_label">Facebook:</span> <a href="https://www.facebook.com/kevin.cuevas.359/" class="hover:text-white transition-colors">kevin.cuevas.359</a></p>
                     </div>
                 </div>
                 <div>
-                    <h4 class="font-serif text-lg mb-4">Navigation</h4>
+                    <h4 data-translate="footer_nav_title" class="font-serif text-lg mb-4">Navigation</h4>
                     <div class="space-y-2 font-sans text-sm">
-                        <a href="index.html" class="block text-white/70 hover:text-white transition-colors">Home</a>
-                        <a href="work.html" class="block text-white/70 hover:text-white transition-colors">Work</a>
-                        <a href="about.html" class="block text-white/70 hover:text-white transition-colors">About</a>
-                        <a href="contact.html" class="block text-white/70 hover:text-white transition-colors">Contact</a>
+                        <a href="index.html" data-translate="nav_home" class="block text-white/70 hover:text-white transition-colors">Home</a>
+                        <a href="work.html" data-translate="nav_work" class="block text-white/70 hover:text-white transition-colors">Work</a>
+                        <a href="about.html" data-translate="nav_about" class="block text-white/70 hover:text-white transition-colors">About</a>
+                        <a href="contact.html" data-translate="nav_contact" class="block text-white/70 hover:text-white transition-colors">Contact</a>
                     </div>
                 </div>
             </div>
             <div class="border-t border-white/20 pt-8 text-center">
-                <p class="font-sans text-white/50 text-sm">© 2026 Kevin Cuevas. All rights reserved.</p>
+                <p data-translate="footer_copyright" class="font-sans text-white/50 text-sm">© 2026 Kevin Cuevas. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a 
-        href="#" 
-        id="whatsapp-float"
-        class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-colors focus-ring z-30 flex items-center justify-center"
-        aria-label="Contact on WhatsApp"
-    >
-        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-        </svg>
-    </a>
-
-    <!-- JavaScript -->
+    <!-- JavaScript -->
 </body>
 </html>
