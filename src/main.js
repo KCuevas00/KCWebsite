@@ -6,7 +6,7 @@ const translations = {
     en: {
         // Navigation
         nav_home: 'HOME',
-        nav_work: 'WORK',
+        nav_work: 'GALLERY',
         nav_about: 'ABOUT',
         nav_contact: 'CONTACT',
         nav_menu: 'Menu',
@@ -15,11 +15,11 @@ const translations = {
         // Hero - Index
         hero_title: 'Simple websites for Illinois small businesses.',
         hero_name: 'Kevin Cuevas',
-        hero_education: 'Northern Illinois University — Computer Science',
+        //hero_education: 'Northern Illinois University — Computer Science',
 
         // Hero - Work
-        hero_work_title: 'Featured Work',
-        hero_work_by: 'by Kevin Cuevas.',
+        hero_work_title: 'Project Gallery',
+        //hero_work_by: 'by Kevin Cuevas.',
 
         // Hero - About
         hero_about_title: 'About Kevin',
@@ -91,7 +91,7 @@ const translations = {
         learn_more: 'Learn More →',
 
         // Footer CTA
-        footer_cta_title: "Let's build something that feels real.",
+        footer_cta_title: "Contact me to get started.",
         footer_cta_desc: 'Ready to establish your professional online presence? Let\'s discuss how we can create a website that represents your business with authenticity and care.',
         start_project: 'Start a Project',
 
@@ -101,13 +101,11 @@ const translations = {
         contact_facebook_label: 'Facebook',
 
         // Footer
-        footer_name: 'Kevin Cuevas',
-        footer_desc: 'Computer Science student at Northern Illinois University creating websites for local businesses.',
         footer_contact_title: 'Contact',
-        footer_email_label: 'Email:',
-        footer_phone_label: 'Phone:',
-        footer_whatsapp_label: 'WhatsApp:',
-        footer_facebook_label: 'Facebook:',
+        footer_email_label: 'Email',
+        footer_phone_label: 'Phone',
+        footer_whatsapp_label: 'WhatsApp',
+        footer_facebook_label: 'Facebook',
         footer_nav_title: 'Navigation',
         footer_copyright: '© 2026 Kevin Cuevas. All rights reserved.',
 
@@ -198,8 +196,8 @@ const translations = {
     es: {
         // Navigation
         nav_home: 'INICIO',
-        nav_work: 'TRABAJO',
-        nav_about: 'ACERCA DE',
+        nav_work: 'GALERÍA',
+        nav_about: 'SOBRE',
         nav_contact: 'CONTACTO',
         nav_menu: 'Menú',
         nav_close: 'Cerrar menú',
@@ -207,11 +205,11 @@ const translations = {
         // Hero - Index
         hero_title: 'Sitios web simples para pequeñas empresas de Illinois.',
         hero_name: 'Kevin Cuevas',
-        hero_education: 'Universidad Northern Illinois — Ciencias de la Computación',
+        //hero_education: 'Universidad Northern Illinois — Ciencias de la Computación',
 
         // Hero - Work
-        hero_work_title: 'Trabajo Destacado',
-        hero_work_by: 'por Kevin Cuevas.',
+        hero_work_title: 'Galería de Proyectos',
+        //hero_work_by: 'por Kevin Cuevas.',
 
         // Hero - About
         hero_about_title: 'Acerca de Kevin',
@@ -260,9 +258,9 @@ const translations = {
         step1_title: 'Envíame tu información',
         step1_desc: 'Envías tus datos de contacto, información del negocio, fotos que quieres en el sitio y enlaces de redes sociales.',
         step2_title: 'Diseño y Construcción',
-        step2_desc: 'Creo un sitio web limpio y moderno adaptado a tu negocio',
+        step2_desc: 'Crearé un sitio web limpio y moderno adaptado a tu negocio',
         step3_title: 'Lanzamiento',
-        step3_desc: 'Te envío vistas previas del sitio. Una vez que todo se ve bien, configuramos tu dominio personalizado y lo publicamos en vivo.',
+        step3_desc: 'Te enviaré vistas previas del sitio. Una vez que todo se ve bien, configuramos tu dominio personalizado y lo publicamos en vivo.',
 
         what_get_section: 'Lo Que Recibes',
         deliverable1: 'Sitio web de escritorio diseñado para su negocio',
@@ -271,7 +269,7 @@ const translations = {
         deliverable4: 'Integración de clic para llamar por teléfono y WhatsApp',
         deliverable5: 'Configuración básica de SEO para visibilidad',
         deliverable6: 'Guía de configuración de hosting',
-        deliverable7: 'Guía de configuración de dominio personalizado (tubusiness.com)',
+        deliverable7: 'Guía de configuración de dominio personalizado (tunegocio.com)',
         deliverable8: 'Rendimiento de carga rápida',
         deliverable9: 'Soporte y ediciones pequeñas después del lanzamiento',
 
@@ -283,7 +281,7 @@ const translations = {
         learn_more: 'Conocer Más →',
 
         // Footer CTA
-        footer_cta_title: 'Construyamos algo que se sienta real.',
+        footer_cta_title: 'Contáctame para comenzar.',
         footer_cta_desc: '¿Listo para establecer su presencia profesional en línea? Hablemos de cómo podemos crear un sitio web que represente su negocio con autenticidad y cuidado.',
         start_project: 'Comenzar Proyecto',
 
@@ -293,13 +291,11 @@ const translations = {
         contact_facebook_label: 'Facebook',
 
         // Footer
-        footer_name: 'Kevin Cuevas',
-        footer_desc: 'Estudiante de Ciencias de la Computación en Northern Illinois University creando sitios web para empresas locales.',
         footer_contact_title: 'Contacto',
-        footer_email_label: 'Correo:',
-        footer_phone_label: 'Teléfono:',
-        footer_whatsapp_label: 'WhatsApp:',
-        footer_facebook_label: 'Facebook:',
+        footer_email_label: 'Correo',
+        footer_phone_label: 'Teléfono',
+        footer_whatsapp_label: 'WhatsApp',
+        footer_facebook_label: 'Facebook',
         footer_nav_title: 'Navegación',
         footer_copyright: '© 2026 Kevin Cuevas. Todos los derechos reservados.',
 
